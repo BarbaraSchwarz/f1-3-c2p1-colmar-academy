@@ -1,0 +1,346 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+header {
+  height: 64px;
+  width: 1200px;
+  position: fixed;
+  z-index: 1;
+  border-bottom: 1px solid white;
+  background-color: white;
+  margin-top: 0;
+  overflow: scroll;
+}
+
+.brand {
+  position: relative;
+  float: left;
+  height: 64px;
+  width: auto;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* svg opened in text editor for dimensions */
+.lion img {
+  height: 32px;
+  width: 27px;
+  margin-left: 24px;
+}
+
+.brand span {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.brand span a {
+  color: grey;
+}
+
+nav {
+  position: relative;
+  float: right;
+  margin-right: 24px;
+  height: 64px;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.desk li {
+  display: inline-block;
+  padding-left: 16px;
+  font-size: 16px;
+}
+
+.mobile li {
+  display: none;
+}
+
+.desk a {
+  text-decoration: none;
+  color: grey;
+}
+
+@media only screen and (max-width: 480px) {
+  .lion img {
+    display: none;
+  }
+  .brand span {
+    display: none;
+  }
+  nav ul.desk {
+    display: none;
+  }
+
+  header {
+    width: 100%;
+    border: 1px dotted red;
+    display: flex;
+  }
+
+  nav ul.mobile {
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mobile li {
+    display: inline-flex;
+    padding-right: 94px;
+  }
+
+  #mobLeo img {
+    margin-left: 32px;
+  }
+
+  #mobLeo img,
+  .icon img {
+    height: 32px;
+    width: 27px;
+  }
+
+  #study img {
+
+  }
+
+}
+
+
+/* Jumbotron section : big banner */
+
+.learn {
+  background-color: lightgrey;
+  width: 1200px;
+  margin-top: 32px;
+}
+
+.container {
+  display: inline-flex;
+  width: 1200px;
+}
+
+.sixtyPc {
+  width: 60%;
+  margin: 32px 24px;
+}
+
+.photoVideo img,
+video {
+  width: 100%;
+  height: auto;
+}
+
+.fortyPc {
+  width: 40%;
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.new {
+width: 65%;
+align-self: center;
+}
+
+.new h3 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 100%;
+  background-color: darkgrey;
+  color: white;
+  text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .learn,
+  .info,
+  .curricula,
+  .showCase,
+  footer {
+    width: 100%;
+    border: 1px dashed blue;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .sixtyPc, .fortyPc {
+    width: 100%;
+    margin: 0 0;
+  }
+
+  .photoVideo img {
+    width: 100%
+    height: auto;
+  }
+
+  #study {
+
+  }
+}
+
+/* Campus Information section left-hand side*/
+/* Thesis section title */
+
+.practice h1,
+.exhibit h1 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* Campus Information section */
+/* right-hand side */
+
+.slot {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 32px;
+}
+
+.thirtyfivePC {
+  width: 35%;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: auto;
+  margin-left: 16px;
+}
+
+.slotDate img {
+  margin-bottom: 16px;
+
+}
+
+.slotCamp img,
+.slotGuest img,
+.slotFisma img,
+.slotResearch img {
+  margin-top: 16px;
+  margin-bottom: 16px;
+
+}
+
+.sixtyfivePc {
+  width: 65%;
+}
+
+.detailInfo {
+  margin-left: 32px;
+}
+
+.slotDate,
+.slotCamp,
+.slotGuest,
+.slotFisma,
+.slotResearch {
+  display: flex;
+  align-items: center;
+}
+
+.slotDate {
+  border-bottom: 3px solid lightgrey;
+}
+
+.slotGuest,
+.slotFisma {
+  background-color: lightgrey;
+}
+
+
+/* Start Learning section */
+.curricula {
+  background-color: lightgrey;
+  width: 1200px;
+}
+
+.gallery {
+  padding: 32px 72px;
+}
+
+.start h1 {
+  padding-bottom: 32px;
+  text-align: center;
+}
+
+.subject {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  grid-gap: 32px;
+  width: 1056px;
+}
+
+.topic {
+  background-color: white;
+}
+
+.visual img {
+  height: auto;
+  max-width: 100%;
+}
+
+.specifics {
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-bottom: 24px;
+}
+
+/* Thesis exhibit section */
+.exhibit h1 {
+  text-align: center;
+}
+
+.urban {
+  padding-top: 24px;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  width: 1200px;
+  border-top: 1px solid grey;
+  padding-top: 16px;
+  padding-left: 24px;
+  color: grey;
+}
+
+footer p {
+  float: left;
+}
+
+footer span {
+  float: right;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer a {
+  text-decoration: none;
+  color: grey;
+  padding-right: 16px;
+}
